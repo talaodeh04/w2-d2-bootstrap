@@ -1,0 +1,355 @@
+:root {
+    --ink: #1a1613;
+    --wine: #7c2d3e;
+    --wine-dark: #5c1f2e;
+    --cream: #faf6f2;
+    --border: #e8e1da;
+    --muted: #7a7168;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    background: rgba(250, 246, 242, .92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--ink);
+    font-size: 1.4rem;
+}
+
+.accent-dot {
+    color: var(--wine);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--muted) !important;
+}
+
+.nav-link:hover {
+    color: var(--wine) !important;
+}
+
+.hero {
+    padding: 130px 0 90px;
+    text-align: center;
+    background: var(--cream);
+}
+
+.hero-photo-wrap {
+    width: 168px;
+    height: 168px;
+    margin: 0 auto 28px;
+    padding: 6px;
+    border-radius: 50%;
+    border: 2px solid var(--wine);
+    position: relative;
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 28px -10px rgba(26, 22, 19, .3);
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-tag {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin-bottom: 16px;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.hero h1 .accent {
+    color: var(--wine);
+}
+
+.hero-tagline {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 540px;
+    margin: 0 auto 34px;
+}
+
+.btn-primary-custom {
+    background: var(--ink);
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-weight: 600;
+    border: 1px solid var(--ink);
+    transition: all .2s ease;
+}
+
+.btn-primary-custom:hover {
+    background: var(--wine);
+    border-color: var(--wine);
+    color: #fff;
+}
+
+.btn-outline-custom {
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    color: var(--ink);
+    background: #fff;
+    transition: all .2s ease;
+}
+
+.btn-outline-custom:hover {
+    border-color: var(--wine);
+    color: var(--wine);
+}
+
+.section-tag {
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.section-sub {
+    color: var(--muted);
+    max-width: 560px;
+}
+
+.section-alt {
+    background: var(--cream);
+}
+
+.lead-text {
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.list-group-item {
+    border-color: var(--border);
+    color: var(--muted);
+    padding: 14px 0;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.about-icon {
+    color: var(--wine);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.skill-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--wine);
+    box-shadow: 0 12px 24px -16px rgba(26, 22, 19, .35);
+}
+
+.skill-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 22px 12px;
+}
+
+.skill-icon {
+    font-size: 1.9rem;
+    color: var(--wine);
+}
+
+.badge-skill {
+    font-weight: 600;
+    color: var(--ink);
+    font-size: .88rem;
+}
+
+.project-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 32px -20px rgba(26, 22, 19, .3);
+}
+
+.project-img-wrap {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .3s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.04);
+}
+
+.project-badge {
+    background: var(--wine);
+    color: #fff;
+    font-weight: 600;
+    font-size: .7rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.tech-badge {
+    background: var(--cream);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.card-footer {
+    background: transparent;
+    border-top: 1px solid var(--border);
+}
+
+.card-link {
+    color: var(--wine);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.accordion-button {
+    font-weight: 600;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.accordion-icon {
+    color: var(--wine);
+    font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--cream);
+    color: var(--wine);
+}
+
+.accordion-button:not(.collapsed) .accordion-icon {
+    color: var(--wine);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--border);
+}
+
+.alert-note {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.form-control:focus {
+    border-color: var(--wine);
+    box-shadow: 0 0 0 .2rem rgba(124, 45, 62, .15);
+}
+
+.contact-icons a {
+    margin: 0 12px;
+    color: var(--wine);
+    font-size: 1.4rem;
+    display: inline-flex;
+    transition: color .2s ease, transform .2s ease;
+}
+
+.contact-icons a:hover {
+    color: var(--wine-dark);
+    transform: translateY(-2px);
+}
+
+footer {
+    background: var(--ink);
+    color: #fff;
+}
+
+.footer-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    opacity: .85;
+    transition: opacity .2s ease, transform .2s ease;
+    display: inline-flex;
+}
+
+.footer-icons a:hover {
+    opacity: 1;
+    color: var(--wine);
+    transform: translateY(-2px);
+}
+
+.footer-name {
+    color: var(--wine);
+    font-weight: 600;
+}
